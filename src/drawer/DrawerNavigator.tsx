@@ -8,6 +8,13 @@ import Home from './Home';
 import EntranceAnimation from './EntranceAnimation';
 import FeedbackAnimation from './FeedbackAnimation';
 import InteractiveStyleSwitcher from './InteractiveStyleSwitcher';
+import LoopingAnimations from './LoopingAnimations';
+import ProgressAnimation from './ProgressAnimation';
+import SkeletonLoader from './SkeletonLoader';
+import { SlideInDown } from 'react-native-reanimated';
+import SlideTransition from './SlideTransition';
+import SwipeToDelete from './SwipeToDelete';
+import AvengersSlider from './AvengersSlider';
 
 const Drawer = createDrawerNavigator();
 const DrawerNavigator = () => {
@@ -44,6 +51,37 @@ const DrawerNavigator = () => {
         component={InteractiveStyleSwitcher}
         options={{headerShown: false}}
       />
+       <Drawer.Screen
+        name="LoopingAnimations"
+        component={LoopingAnimations}
+        options={{headerShown: false}}
+      />
+       <Drawer.Screen
+        name="ProgressAnimation"
+        component={ProgressAnimation}
+        options={{headerShown: false}}
+      />
+       <Drawer.Screen
+        name="SkeletonLoader"
+        component={SkeletonLoader}
+        options={{headerShown: false}}
+      />
+       <Drawer.Screen
+        name="SlideTransition"
+        component={SlideTransition}
+        options={{headerShown: false}}
+      />
+       <Drawer.Screen
+        name="SwipeToDelete"
+        component={SwipeToDelete}
+        options={{headerShown: false}}
+      />
+       <Drawer.Screen
+        name="AvengersSlider"
+        component={AvengersSlider}
+        options={{headerShown: false}}
+      />
+
        
        
     </Drawer.Navigator>
